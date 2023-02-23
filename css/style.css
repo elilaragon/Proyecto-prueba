@@ -1,16 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
-ul{
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333; 
+    background-color: #333;
     display: flex;
     justify-content: end;
     align-items: center;
-    position: -webkit-sticky; /*safari*/
-    position: sticky;
-    top: 0;  
+    text-align: center;
+
 }
 
 li a {
@@ -21,3 +24,41 @@ li a {
     text-decoration: none;
 }
 
+nav {
+    position: webkit-sticky;
+    /*safari*/
+    position: sticky;
+    top: 0;
+}
+
+.tarjeta {
+    border: 1px solid;
+    border-radius: 20px;
+    border-color: #333;
+    margin: 10px;
+    padding: 16px;
+    width: 50%;
+    height: auto;
+}
+
+.imagen-principal {
+    width: 100%;
+}
+.imagen-principal img {
+    width: 100%;
+    height: auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 24px;
+}
+.boton-principal{
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.enlace-principal{
+text-align: center;
+}
