@@ -50,7 +50,7 @@ nav {
 }
 
 .titulo-principal {
-    text-align: center;
+    text-align: left;
     font-size: 24px;
 }
 .boton-principal{
@@ -61,4 +61,15 @@ nav {
 
 .enlace-principal{
 text-align: center;
+}
+
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
 }
