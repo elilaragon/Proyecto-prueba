@@ -1,16 +1,29 @@
 * {
     margin: 0;
     padding: 0;
+    background-color: #EAEBEB;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.logo-principal {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-principal img {
+    width: 250px;
+    height: auto;
 }
 
 ul {
+    font-weight: 700;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     text-align: center;
 
@@ -18,7 +31,7 @@ ul {
 
 li a {
     display: block;
-    color: rgb(255, 255, 255);
+    color: #3F525A;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -44,6 +57,7 @@ nav {
 .imagen-principal {
     width: 100%;
 }
+
 .imagen-principal img {
     width: 100%;
     height: auto;
@@ -53,23 +67,67 @@ nav {
     text-align: left;
     font-size: 24px;
 }
-.boton-principal{
+
+.boton-principal {
     background-color: aqua;
     padding: 10px;
     border-radius: 5px;
 }
 
-.enlace-principal{
-text-align: center;
+.enlace-principal {
+    text-align: center;
 }
 
-h6 {
-    font-family: 'Open Sans', sans-serif;
+.titulo-principal {
     font-weight: 400;
-
 }
-p {
-    font-family: 'Open Sans', sans-serif;
+
+.texto-tarjeta {
     font-size: 14px;
     font-weight: 500;
+}
+
+.banner-rebajas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #F06B5F;
+}
+
+.banner-rebajas p {
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: transparent;
+    color: #EAEBEB;
+}
+
+.banner-promociones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background-image: url("https://res.cloudinary.com/elizapardo/image/upload/v1677669932/Web%20Kofe/pexels-negative-space-34079_zlcexi.jpg");
+}
+
+.promociones-titulo {
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 100px;
+    color: #EAEBEB;
+}
+
+.banner-promociones span {
+    color: #EAEBEB;
+    background-color: transparent;
+    font-weight: 800;
+    font-size: 150px;
+    text-align: center;
 }
