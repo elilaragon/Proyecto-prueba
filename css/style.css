@@ -26,6 +26,7 @@ ul {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: #F06B5F
 
 }
 
@@ -234,7 +235,6 @@ footer {
 }
 .contenedor-tarjetas-recetas { 
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     width: 1200px;
     margin-left: auto;
