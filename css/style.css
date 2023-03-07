@@ -10,16 +10,41 @@ body {
 
 .logo-principal {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+}
+
+@media (min-width: 1200px) {
+    .logo-principal {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .logo-principal img {
-    width: 250px;
+    width: 180px;
     height: auto;
 }
 
+@media (min-width: 1200px) {
+    .logo-principal img {
+        width: 250px;
+        height: auto;
+
+    }
+}
+
+.fa-solid-fa-bars {
+    width: 30px;
+    height: auto;
+    display: flex;
+    justify: flex-end;
+    display: none
+    
+}
+
 ul {
-    font-weight: 700;
+    position: relative;
+    font-weight: 600;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -29,14 +54,49 @@ ul {
     align-items: center;
     text-align: center;
     background-color: #2A3040
+
 }
+
+@media (max-width:550px) {
+    ul {
+        top: 0;
+        position: fixed;
+        width: 250px;
+        height: 100vh;
+        z-index: 1000;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        right: 0;
+    }
+
+    .fa-solid-fa-bars {
+        display: block;
+        right: 0;
+    }
+    nav .fa-solid-fa-bars:hover + ul{
+right: 0;
+    }
+    ul:hover{
+        right: 0;
+    }
+}
+
 
 li a {
     display: block;
     color: #EAEBEB;
-    text-align: center;
-    padding: 14px 16px;
+    text-align: start;
+    padding: 8px 10px;
     text-decoration: none;
+    font-size: 12px;
+}
+
+@media (min-width: 1200px) {
+    li a {
+        text-align: center;
+        font-size: 16px;
+    }
 }
 
 nav {
@@ -48,22 +108,45 @@ nav {
 
 .tarjeta-de-producto {
     border: 1px solid;
-    border-radius: 12px;
+    border-radius: 10px;
     border-color: #333;
-    padding: 16px;
-    width: 200px;
+    padding: 10px;
+    width: 40%;
     height: auto;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (min-width: 1200px) {
+    .tarjeta-de-producto {
+        width: 200px;
+        border: 1px solid;
+        border-radius: 12px;
+        border-color: #333;
+        padding: 16px;
+        height: auto;
+
+    }
 }
 
 .tarjeta-de-producto:hover {
     transform: scale(1.05);
 }
 
+
+
 .imagen-principal-tarjeta img {
     width: 100%;
-    height: 200px;
+    height: auto;
 }
+
+@media (min-width: 1200px) {
+    .imagen-principal-tarjeta img {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+
 
 .titulo-principal-tarjeta {
     text-align: left;
@@ -82,13 +165,30 @@ nav {
 
 .titulo-principal-tarjeta {
     font-weight: 600;
-    font-size: 15px;
+    font-size: 13px;
 }
 
+@media (min-width: 1200px) {
+    .texto-tarjeta {
+        font-weight: 600;
+        font-size: 15px;
+    }
+}
+
+
 .texto-tarjeta {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
 }
+
+@media (min-width: 1200px) {
+    .texto-tarjeta {
+        font-size: 12px;
+        font-weight: 500;
+    }
+}
+
+
 
 .banner-rebajas {
     display: flex;
@@ -114,27 +214,53 @@ nav {
     background-repeat: no-repeat;
     background-position: left center;
     position: relative;
-    height: 300px;
-    width: 100%;
+    height: 200px;
+    width:auto;
     background-image: url("https://res.cloudinary.com/elizapardo/image/upload/v1677669932/Web%20Kofe/pexels-negative-space-34079_zlcexi.jpg");
 }
 
+@media (min-width: 1200px) {
+    .banner-promociones {
+        height: 300px;
+        width: 100%;
+    }
+}
+
 .titulo-de-secciones {
-    font-weight: 400;
-    padding-top: 40px;
+    font-weight: 300;
+    padding-top: 30px;
+    margin-left: 15px;
+}
+
+@media (min-width: 1200px) {
+    .titulo-de-secciones {
+        font-weight: 400;
+        padding-top: 40px;
+    }
 
 }
 
 .promociones-titulo {
     font-weight: 400;
-    font-size: 90px;
+    font-size: 50px;
     color: #EAEBEB;
+}
+
+@media (min-width: 1200px) {
+    .promociones-titulo {
+        font-size: 90px;
+    }
+
+    .banner-promociones span {
+        font-size: 130px;
+    }
+
 }
 
 .banner-promociones span {
     color: #EAEBEB;
     font-weight: 800;
-    font-size: 130px;
+    font-size: 90px;
     text-align: center;
 }
 
@@ -142,16 +268,29 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 1200px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
 }
 
+@media (min-width:1200px) {
+    .contenedor-de-tarjetas {
+        width: 1200px;
+    }
+
+}
+
 .carrusel-de-productos {
-    width: 1200px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media (min-width:1200px) {
+    .carrusel-de-productos {
+        width: 1200px;
+    }
 }
 
 .chip-cesta-compra {
@@ -177,13 +316,19 @@ nav {
 }
 
 .linea-horizontal-secciones {
-    width: 1200px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: 5px;
     background-color: #3F525A;
     height: 1px;
+}
+
+@media (min-width:1200px) {
+    .linea-horizontal-secciones {
+        width: 1200px;
+    }
 }
 
 .imagen-tarjeta-recetas img {
@@ -236,30 +381,35 @@ footer {
 }
 
 .carrusel-video-recetas {
-    width: 1200px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
+@media (min-width:1200px) {
+    .carrusel-video-recetas {
+        width: 1200px;
+    }
+}
+
 .contenedor-tarjetas-recetas {
-    display: flex;
-    justify-content: space-between;
-    width: 1200px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
     margin-bottom: 50px;
 }
 
-
-
-
-.logo-principal-blanco {
-    margin-left: 200px;
-    display: flex;
-    justify-content: flex-start;
-
+@media (min-width:1200px) {
+    .contenedor-tarjetas-recetas {
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+    }
 }
+
+
+
 
 .logo-principal-blanco img {
     width: 200px;
@@ -270,20 +420,23 @@ footer {
     background-color: #2A3040;
     display: flex;
     align-content: center;
-    
+    justify-content: space-between;
+    padding: 0 70px;
 }
 
 .nav-lista {
-    font-weight: 700;
+    font-weight: 600;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 35%;
     align-items: center;
     text-align: center;
+}
+
+.nav-lista li a {
+    font-size: 14px;
 }
 
 .boton-icono-nav {
@@ -291,8 +444,8 @@ footer {
     margin-top: 10px;
     border-color: transparent;
     background-color: #EAEBEB;
-    width: 45px;
-    height: 45px;
+    width: 32px;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -300,18 +453,24 @@ footer {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
 
 }
+
+.boton-icono-nav img {
+    height: 20px;
+    width: 20px;
+}
+
 .iconos-del-nav {
     display: flex;
     align-items: center;
-    align-content:space-between;
+    align-content: space-between;
     flex-direction: row;
 }
 
-.contendor-iconos-nav{
+.contendor-iconos-nav {
     justify-content: flex-end;
 }
 
 
-.iconos-del-nav div{
+.iconos-del-nav div {
     align-items: flex-end;
 }
