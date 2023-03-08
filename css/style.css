@@ -7,7 +7,11 @@
 body {
     background-color: #EAEBEB;
 }
-
+ .header-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+ }
 .logo-principal {
     display: flex;
     justify-content: flex-start;
@@ -29,81 +33,82 @@ body {
     .logo-principal img {
         width: 250px;
         height: auto;
-
     }
-}
+} 
 
-.fa-solid-fa-bars {
-    width: 30px;
+.icon-nav {
+    width: auto;
     height: auto;
-    display: flex;
-    justify: flex-end;
-    display: none
-    
-}
-
-ul {
+    font-size: 22px;
+    color: #2A3040;
     position: relative;
-    font-weight: 600;
+}
+
+.navegador-principal {
+    position: absolute;
+    right: 0;
+    /* display: flex;
+    justify-content: end; */
+    top: 0;
+}
+
+
+.navegador {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-weight: 600;
+    background-color: #2A3040;
+    width: 250px;
+    height: auto;
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
     text-align: center;
-    background-color: #2A3040
-
-}
-
-@media (max-width:550px) {
-    ul {
-        top: 0;
-        position: fixed;
-        width: 250px;
-        height: 100vh;
-        z-index: 1000;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-        right: 0;
-    }
-
-    .fa-solid-fa-bars {
-        display: block;
-        right: 0;
-    }
-    nav .fa-solid-fa-bars:hover + ul{
-right: 0;
-    }
-    ul:hover{
-        right: 0;
-    }
+    display: flex;
 }
 
 
-li a {
+
+@media ( min-width:550px) {
+    .navegador {
+        font-weight: 600;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2A3040;
+        width: 100%;
+        flex-direction: row;
+    }
+  .icon-nav {
+        display: none !important;
+    }
+
+    .navegador-principal {
+        position: relative;
+    }
+}
+
+
+.navegador-principal li a {
     display: block;
     color: #EAEBEB;
     text-align: start;
     padding: 8px 10px;
     text-decoration: none;
     font-size: 12px;
+  
 }
 
 @media (min-width: 1200px) {
-    li a {
+    .navegador-principal li a {
         text-align: center;
         font-size: 16px;
     }
-}
-
-nav {
-    position: webkit-sticky;
-    /*safari*/
-    position: sticky;
-    top: 0;
 }
 
 .tarjeta-de-producto {
