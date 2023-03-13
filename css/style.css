@@ -141,7 +141,6 @@ body {
         border-color: #333;
         padding: 16px;
         height: auto;
-
     }
 }
 
@@ -431,7 +430,7 @@ footer {
 .navegador-paginas {
     background-color: #2A3040;
     display: block;
-    
+
 }
 
 .logo-principal-blanco img {
@@ -449,6 +448,7 @@ footer {
         display: flex;
         justify-content: flex-start;
     }
+
     .navegador-paginas {
         display: flex;
         align-items: center;
@@ -459,8 +459,8 @@ footer {
 .contenedor-nav-paginas {
     background-color: #2A3040;
     display: flex;
-justify-content: space-between;
-align-items: center;
+    justify-content: space-between;
+    align-items: center;
     margin: 0;
     padding: 0;
 }
@@ -470,7 +470,6 @@ align-items: center;
         display: flex;
         align-items: center;
         justify-content: space-between;
-
     }
 }
 
@@ -512,9 +511,10 @@ align-items: center;
 
 }
 
-.boton-icono-nav:last-child{
-margin-right: 0;
+.boton-icono-nav:last-child {
+    margin-right: 0;
 }
+
 .boton-icono-nav img {
     height: 20px;
     width: 20px;
@@ -526,33 +526,35 @@ margin-right: 0;
     order: 1;
 }
 
-.ul-contenedor {
-    order: 2;
-    position: relative;
-}
-
-.nav-lista{
-    position: absolute;
-    top: 22px;
-    right: 0;
-}
-
 @media (min-width:550px) {
     .iconos-del-nav {
         order: 2;
     }
-    
-    .ul-contenedor{
+
+    .ul-contenedor {
+        order: 2;
+        position: relative;
+    }
+
+    .nav-lista {
+        position: absolute;
+        top: 22px;
+        right: 0;
+    }
+
+
+    .ul-contenedor {
         order: 1;
     }
-    
-    .nav-lista{
+
+    .nav-lista {
         position: relative;
         top: 0;
 
     }
 
 }
+
 .contendor-iconos-nav {
     align-items: flex-start;
     display: flex;
@@ -571,7 +573,7 @@ margin-right: 0;
         justify-content: flex-end;
         margin-bottom: 0;
     }
- 
+
 }
 
 .iconos-del-nav {
@@ -596,7 +598,7 @@ margin-right: 0;
 .nav-lista {
     list-style-type: none;
     font-weight: 600;
-    background-color:#2A3040;
+    background-color: #2A3040;
     width: auto;
     height: auto;
     flex-direction: column;
@@ -629,4 +631,28 @@ margin-right: 0;
         display: none !important;
     }
 
+}
+
+
+
+
+/* //TRABAJA CON NOSOTROS// */
+
+.banner-buscar-trabajo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 400px;
+    background-color: #D9D9D9;
+}
+
+.titulo-banner-empleo h2{
+    font-weight: 600;
+    font-size: 55px;
+
+}
+.form-select {
+    width: 30%;
+    margin: 10px;
 }

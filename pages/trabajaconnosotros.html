@@ -1,63 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="shortcut icon" href="./multimedia/img/noun-fossil-3159389.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
         rel="stylesheet">
 </head>
+
+
 <body>
-   
     <header>
-    
+        <div class="navegador-paginas">
+            <div class="logo-principal-blanco">
+                <a href="../index.html" alt="volver al inicio"><img src="../multimedia/img/logo_kofe_blanco.svg"></a>
+            </div>
+            <nav class="contenedor-nav-paginas">
+                <div class="iconos-del-nav">
+                    <div class="contendor-iconos-nav">
+                        <button class="boton-icono-nav">
+                            <img src="../multimedia/img/🦆 icon _search_.svg" alt="">
+                        </button>
+                        <button class="boton-icono-nav">
+                            <img src="../multimedia/img/🦆 icon _person_.svg" alt="">
+                        </button>
+                        <button class="boton-icono-nav">
+                            <img src="../multimedia/img/🦆 icon _shopping cart_.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="ul-contenedor">
+                    <i class="icon-menu-paginas fa-solid fa-bars"></i>
+                    <ul class="nav-lista">
+                        <!-- <li><a href="../index.html">Inicio</a></li>
+                                <li><a href="./Info.html">Info</a></li> -->
+                        <li><a href="./producto.html">Productos</a></li>
+                        <li><a href="./sobrenosotros.html">Sobre nosotros</a></li>
+                        <li><a href="./trabajaconnosotros.html" target="_blank">Trabaja con nosotros</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <!-- <li><a href="./Info.html">Info</a></li> -->
-            <li><a href="./producto.html">Productos</a></li>
-            <li><a href="./sobrenosotros.html">Sobre nosotros</a></li>
-            <li><a href="./trabajaconnosotros.html" target="_blank">Trabaja con nosotros</a></li>
-        </ul>
-    </nav>
-
-    <h1>Trabaja con nosotros</h1>    
-
+<div  class="banner-buscar-trabajo">
+    <div class="titulo-banner-empleo">
+        <h2>Encuentra más que un trabajo</h2>
+    </div>
+    <div></div>
+    <select class="form-select" aria-label="Default select example">
+        <option selected>Puestos</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Ciudades</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+</div>
     <main>
         <form action="" method="get">
-            <label>Nombre: 
-                <input type="text" name="nombre" placeholder="Nombre"required>
+            <div>
+
+            </div>
+            <label>Nombre:
+                <input type="text" name="nombre" placeholder="Nombre" required>
             </label>
             <label>Apellido:
                 <input type="text" name="apellido" placeholder="Apellido" required>
             </label>
             <label>Ciudad:
-                <input type="text" name="ciudad" placeholder="Ciudad"required>
+                <input type="text" name="ciudad" placeholder="Ciudad" required>
             </label>
             <label>Numero de telefono:
-                <input type="number" name="numero de telefono" placeholder="Telefono"required>
+                <input type="number" name="numero de telefono" placeholder="Telefono" required>
             </label>
             <label>Email:
-                <input type="email" name="Mail" placeholder="Correo"required>
+                <input type="email" name="Mail" placeholder="Correo" required>
             </label>
             <br>
             <br>
-        <textarea name="carta de presentacion" id="" cols="30" rows="10" placeholder="Carta de presentación"></textarea>
-        <br>
-        <br>
-        <input type="button" value="Cargar CV">
-        <br><br>
-        <input type="submit" value="Enviar">
+            <textarea name="carta de presentacion" id="" cols="30" rows="10"
+                placeholder="Carta de presentación"></textarea>
+            <br>
+            <br>
+            <input type="button" value="Cargar CV">
+            <br><br>
+            <input type="submit" value="Enviar">
 
         </form>
-        <aside></aside>
+        <aside>
+           
+        </aside>
+
     </main>
-    <footer></footer>
+    <footer>
+        <div>
+            <p class="texto-del-footer"> escribe un correo con tus dudas</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7f1bf24119.js" crossorigin="anonymous"></script>
+
 </body>
-    </html>
+
+</html>
